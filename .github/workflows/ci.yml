@@ -2,11 +2,13 @@ name: ci
 
 env:
   CONFIG_REPO_NAME: argocd-course-webapp-project
+
+on: [push]
   
-on:
-  push:
-    branches:
-      - 'main'
+# on:
+#   push:
+#     branches:
+#       - 'main'
 
 jobs:
   build-test:
